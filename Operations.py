@@ -13,3 +13,10 @@ class opeartion:
     # This function divides two numbers
     def divide(x, y):
         return x / y
+
+    def equation_oper(equ):
+        try:
+            result = eval(equ)
+        except:
+            result = None
+        return result
