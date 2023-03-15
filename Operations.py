@@ -13,3 +13,20 @@ class opeartion:
     # This function divides two numbers
     def divide(x, y):
         return x / y
+    
+    # This function mod 
+    def mod(x,y):
+        return x % y
+    
+    # This function x power y 
+    def power(x,y):
+        return x ** y
+    
+    # This function divides two numbers utremender
+    def withoutremender(x,y):
+        return x // y
+
+        
+
+    
+    
