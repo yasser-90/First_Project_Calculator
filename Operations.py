@@ -13,3 +13,9 @@ class opeartion:
     # This function divides two numbers
     def divide(x, y):
         return x / y
+
+    def mod (x,y):
+        return x%y
+
+    def powe (x,y):
+        return x**y
