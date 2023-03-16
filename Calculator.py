@@ -5,8 +5,6 @@ from tkinter import *
 
 
 def simple_cal_gui():
-
-    # Create the GUI
     tk = Tk()
     tk.title('Simple Calculator')
 
@@ -20,12 +18,11 @@ def simple_cal_gui():
     canvas.pack()
 
 
-    # Create callback functions
     def end_program(event):
         '''Destroys the window and ends the program without needing
         to use global variables or a while loop'''
         tk.destroy()
-        exit() # Automatically ends any Python program
+        exit() 
 
 
     def update_canvas(event):
@@ -34,23 +31,19 @@ def simple_cal_gui():
         try:
             solved = eval(expression)
         except SyntaxError:
-            # The expression wasn't valid, (for example, try typing in "2 +")
-            # so I defaulted to something else.
             solved = '??'
         except NameError:
             solved = 'invalid!'
         except ZeroDivisionError:
             solved = 'infinity!'
-        canvas.delete('all')  # remove old text to avoid overlapping
+        canvas.delete('all')  
         canvas.create_text(100, 100, text=expression, font=('Times', 10))
         canvas.create_text(100, 150, text=f'result={solved}', font=('Times', 15), fill='red', anchor='s')
 
 
-    # Bind callbacks to GUI elements
     btn.bind('<Button-1>', end_program)
     inp.bind('<KeyRelease>', update_canvas)
 
-    # Run the program
     tk.mainloop()
 
 
