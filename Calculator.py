@@ -11,7 +11,7 @@ print("7.tan")
 print("8.sqrt")
 print("9.reverse")
 print("10.exp")
-print("11.reminder")   
+print("11.r eminder")   
 print("12.max")
 print("13.min")
 
