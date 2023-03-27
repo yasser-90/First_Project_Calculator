@@ -11,7 +11,7 @@ print("7.tan")
 print("8.sqrt")
 print("9.reverse")
 print("10.exp")
-print("11.reminder")
+print("11.reminder")   
 print("12.max")
 print("13.min")
 
@@ -20,14 +20,14 @@ while True:
     choice = input("Enter choice(1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /13): ")
 
     # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4','11','12','13'):
+    if choice in ('1', '2', '3', '4','11','12 ','13'):
         try: 
             num1 = float(input("Enter first number: "))# user enter first number (operand)
             num2 = float(input("Enter second number: "))# user enter second number (operand)
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
-        print("Result of Operation = ")
+        print("Result  of Operation = ")
         if choice == '1':
             print(num1, "+", num2, "=", oper.add(num1, num2))
 
