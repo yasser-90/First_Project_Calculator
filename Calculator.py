@@ -15,9 +15,9 @@ print("11.reminder")
 print("12.max")
 print("13.min")
 
-while True:
+while True: 
     # take input from the user
-    choice = input("Enter choice(1/2/3/4/5/6/7/8/9/10/11/12/13): ")
+    choice = input("Enter choice(1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /13): ")
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4','11','12','13'):
