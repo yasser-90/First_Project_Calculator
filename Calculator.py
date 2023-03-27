@@ -21,7 +21,7 @@ while True:
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4','11','12','13'):
-        try:
+        try: 
             num1 = float(input("Enter first number: "))# user enter first number (operand)
             num2 = float(input("Enter second number: "))# user enter second number (operand)
         except ValueError:
